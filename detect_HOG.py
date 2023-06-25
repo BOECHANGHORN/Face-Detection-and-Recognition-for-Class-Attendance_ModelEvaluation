@@ -5,9 +5,10 @@ import os
 import time
 import face_recognition
 
-path_str_list = ['test_base', 'test_nolook', 'test_specs', 'test_mask', 'test_hat_specs', 'test_3ppl', 'test_dim']
+# path_str_list = ['test_base', 'test_nolook', 'test_specs', 'test_mask', 'test_hat_specs', 'test_3ppl', 'test_dim']
+path_str_list = ['test_real_4']
 
-for test in range(7):
+for test in range(len(path_str_list)):
     # Change path here
     path_str = path_str_list[test]
 
@@ -34,7 +35,7 @@ for test in range(7):
         gray = cv2.cvtColor(np.array(frame), cv2.COLOR_RGB2GRAY)
 
         # Detect faces using HOG model from face_recognition
-        face_locations = face_recognition.face_locations(gray, model='hog')
+        face_locations = face_recognition.face_locations(gray)
 
         num_faces = len(face_locations)
         total_faces += num_faces

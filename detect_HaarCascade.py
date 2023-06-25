@@ -4,9 +4,10 @@ from PIL import Image, ImageDraw
 import os
 import time
 
-path_str_list = ['test_base', 'test_nolook', 'test_specs', 'test_mask', 'test_hat_specs', 'test_3ppl', 'test_dim']
+# path_str_list = ['test_base', 'test_nolook', 'test_specs', 'test_mask', 'test_hat_specs', 'test_3ppl', 'test_dim']
+path_str_list = ['test_real_4']
 
-for test in range(7):
+for test in range(len(path_str_list)):
     # Change path here
     path_str = path_str_list[test]
 
