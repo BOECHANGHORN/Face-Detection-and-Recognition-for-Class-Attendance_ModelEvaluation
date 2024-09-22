@@ -1,0 +1,1 @@
+# This project is to evaluate the performance and accuracy between the different face detection and recognition models for the Class Attendance system research paper **"Face Detection and Recognition for Class Attendance"**.
